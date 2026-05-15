@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.soleclipsado.controller.HelloViewController">
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.soleclipsado.controller.HelloViewController">
    <children>
       <ImageView fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
          <image>
@@ -27,13 +27,13 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label text="Ingresa la palabra secreta para comenzar">
+            <Label fx:id="WarningLabel" text="Ingresa una palabra secreta para comenzar  ">
                <font>
                   <Font size="13.0" />
                </font>
             </Label>
-            <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" promptText="6 - 12 Caracteres" />
-            <Button alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="113.0" text="Jugar" textAlignment="CENTER">
+            <TextField fx:id="SecretWordField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" promptText="6 - 12 Caracteres" />
+            <Button fx:id="PlayButton" alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" mnemonicParsing="false" onAction="#OnActionPLayButton" prefHeight="30.0" prefWidth="113.0" text="Jugar" textAlignment="CENTER">
                <VBox.margin>
                   <Insets left="15.0" />
                </VBox.margin>
