@@ -40,7 +40,7 @@ public class HelloViewModel implements InterfHelloView {
         int errorType = inputWordValidator(secretWord);
         switch (errorType) {
             case 1:
-                return "La palabra debe contener entre" + MIN_WORD_CHARACTERS + "y" + MAX_WORD_CHARACTERS + "letras.";
+                return "La palabra debe contener entre"+ " " + MIN_WORD_CHARACTERS +" "+ "y" + " " + MAX_WORD_CHARACTERS + " "  + "letras.";
 
             case 2:
                 return "La palabra no puede contener espacios en blanco";

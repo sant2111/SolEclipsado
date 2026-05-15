@@ -19,6 +19,7 @@ public class HelloView extends Stage {
 
     }
 
+
     public static HelloView getInstance() throws IOException {
         if (HelloViewHolder.INSTANCE == null) {
             HelloViewHolder.INSTANCE = new HelloView();

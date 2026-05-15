@@ -1,6 +1,5 @@
 package com.example.soleclipsado.view;
 
-import com.example.soleclipsado.SolEclipsadoApp;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -16,6 +15,13 @@ public class SolEclipsadoView extends Stage {
         setScene(scene);
         setResizable(false);
         show();
+
+    }
+
+    private String secretWord;
+
+    public void setSecretWord(String word) {
+        this.secretWord = word;
 
     }
 
