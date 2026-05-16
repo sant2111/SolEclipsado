@@ -52,8 +52,8 @@ public class HelloViewController {
             Parent root = loader.load();
             MainGameController gameController = loader.getController();
             gameController.setSecretWord(inputWord);
-
             Stage gameStage = new Stage();
+            gameStage.setResizable(false);
             gameStage.setScene(new Scene(root));
             gameStage.show();
 
