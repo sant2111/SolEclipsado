@@ -2,9 +2,7 @@ package com.example.soleclipsado.controller;
 
 import javafx.scene.Parent;
 import com.example.soleclipsado.model.HelloViewModel;
-import com.example.soleclipsado.model.SolEclipsadoModel;
 import com.example.soleclipsado.view.HelloView;
-import com.example.soleclipsado.view.SolEclipsadoView;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

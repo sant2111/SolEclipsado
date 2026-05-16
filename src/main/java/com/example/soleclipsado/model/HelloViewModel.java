@@ -38,18 +38,14 @@ public class HelloViewModel implements InterfHelloView {
     public  String inputErrorMessage(String secretWord) {
 
         int errorType = inputWordValidator(secretWord);
-        switch (errorType) {
-            case 1:
-                return "La palabra debe contener entre"+ " " + MIN_WORD_CHARACTERS +" "+ "y" + " " + MAX_WORD_CHARACTERS + " "  + "letras.";
+        return switch (errorType) {
+            case 1 ->
+                    "La palabra debe contener entre" + " " + MIN_WORD_CHARACTERS + " " + "y" + " " + MAX_WORD_CHARACTERS + " " + "letras.";
+            case 2 -> "La palabra no puede contener espacios en blanco";
+            case 3 -> "La palabra solo puede contener letras del español";
+            default -> "";
+        };
 
-            case 2:
-                return "La palabra no puede contener espacios en blanco";
-
-            case 3:
-                return "La palabra solo puede contener letras del español";
-        }
-
-        return "";
     }
 
     }

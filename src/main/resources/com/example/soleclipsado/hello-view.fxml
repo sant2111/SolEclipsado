@@ -24,10 +24,10 @@
                   <Insets top="20.0" />
                </VBox.margin>
                <font>
-                  <Font name="System Bold" size="18.0" />
+                  <Font name="Arial Bold" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="WarningLabel" text="Ingresa una palabra secreta para comenzar  ">
+            <Label fx:id="WarningLabel" text="Ingresa una palabra secreta para comenzar  " wrapText="true">
                <font>
                   <Font size="13.0" />
                </font>
